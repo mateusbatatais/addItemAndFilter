@@ -18,13 +18,25 @@ function NotesApp() {
 
   const addEl = (e) => {
     e.preventDefault();
-    const el = React.createElement(
-      "tr",
-      {},
-      React.createElement("td", {}, title),
-      React.createElement("td", {}, status)
-    );
-    ReactDOM.render(el, document.getElementById("noteList"));
+    const newArr = [...list];
+    newArr.push({
+      title: title.trim(),
+      status: status.toLocaleLowerCase().trim(),
+    });
+    setList(newArr);
+    setListTable(newArr);
+    formRef.current.reset();
+    setTitle("");
+    setStatus("");
+    setActiveState("all");
+
+    // const el = React.createElement(
+    //   "tr",
+    //   {},
+    //   React.createElement("td", {}, title),
+    //   React.createElement("td", {}, status)
+    // );
+    // ReactDOM.render(el, document.getElementById("noteList"));
   };
 
   const viewAll = () => {
