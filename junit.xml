@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="5" failures="4" time="13.882">
+  <testsuite name="undefined" errors="0" failures="4" skipped="0" timestamp="2022-06-02T11:58:29" time="8.889" tests="5">
+    <testcase classname=" initial UI is rendered as expected and button works" name=" initial UI is rendered as expected and button works" time="0.039">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 1
+Received: 0
+    at Object.&lt;anonymous&gt; (D:\Documents\_Projetos\AvenueTest\src\App.test.js:38:35)
+    at Object.asyncJestTest (D:\Documents\_Projetos\AvenueTest\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\Documents\_Projetos\AvenueTest\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\Documents\_Projetos\AvenueTest\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\Documents\_Projetos\AvenueTest\node_modules\jest-jasmine2\build\queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+    </testcase>
+    <testcase classname=" button adds notes" name=" button adds notes" time="0.019">
+    </testcase>
+    <testcase classname=" Multiple notes can be added" name=" Multiple notes can be added" time="0.025">
+      <failure>Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  Movie
+Received:
+  Study
+    at Object.&lt;anonymous&gt; (D:\Documents\_Projetos\AvenueTest\src\App.test.js:77:43)
+    at Object.asyncJestTest (D:\Documents\_Projetos\AvenueTest\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\Documents\_Projetos\AvenueTest\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\Documents\_Projetos\AvenueTest\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\Documents\_Projetos\AvenueTest\node_modules\jest-jasmine2\build\queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname=" Switching between buttons work" name=" Switching between buttons work" time="0.021">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 6
+Received: 4
+    at Object.&lt;anonymous&gt; (D:\Documents\_Projetos\AvenueTest\src\App.test.js:129:35)
+    at Object.asyncJestTest (D:\Documents\_Projetos\AvenueTest\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\Documents\_Projetos\AvenueTest\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\Documents\_Projetos\AvenueTest\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\Documents\_Projetos\AvenueTest\node_modules\jest-jasmine2\build\queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname=" In active tab, dont show completed notes" name=" In active tab, dont show completed notes" time="0.012">
+      <failure>Error: expect(element).toHaveTextContent()
+
+Expected element to have text content:
+  Fill form
+Received:
+  Stocks investing
+    at Object.&lt;anonymous&gt; (D:\Documents\_Projetos\AvenueTest\src\App.test.js:199:43)
+    at Object.asyncJestTest (D:\Documents\_Projetos\AvenueTest\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at D:\Documents\_Projetos\AvenueTest\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (D:\Documents\_Projetos\AvenueTest\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at D:\Documents\_Projetos\AvenueTest\node_modules\jest-jasmine2\build\queueRunner.js:73:41</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
